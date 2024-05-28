@@ -1,11 +1,9 @@
-MODULE,PROF,TYPE,DATE,TIME
-Deep Learning,Lotfi EL AACHAK,Exam,27/05/24,10:00
-Deep Learning,Lotfi EL AACHAK,Project,30/05/24,12:00
-Administration Reseaux et System,Anouar BOUDHIR,Project,04/06/24,09:30
-SID & DM,Abdelhadi FENNAN,Exam,04/06/24,09:00
-Droit Entreprise,Yousra NASSOU,Exam,Unknown,
-Administration Reseaux et System,Anouar BOUDHIR,Exam,08/06/24,09:00
-Administration Reseaux et System,ZOUHIR,Project,Unknown,
-Administration Reseaux et System,ZOUHIR,Exam,09/06/24,
-.NET,Hassan ZILI,Project,15/06/24,
-
+MODULE,PROF,TYPE,DAY,DATE,TIME
+Deep Learning,Lotfi EL AACHAK,Project,Thursday,30/05/24,12:00
+Administration Reseaux et System,Anouar BOUDHIR,Project,Tuesday,04/06/24,09:30
+SID & DM,Abdelhadi FENNAN,Exam,Tuesday,04/06/24,09:00
+Droit Entreprise,Yousra NASSOU,Exam,Wednesday,05/06/24,
+Administration Reseaux et System,Anouar BOUDHIR,Exam,Saturday,08/06/24,09:00
+Administration Reseaux et System,ZOUHIR,Project,,Unknown,
+Administration Reseaux et System,ZOUHIR,Exam,Sunday,09/06/24,
+.NET,Hassan ZILI,Project,Saturday,15/06/24,
