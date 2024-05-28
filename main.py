@@ -27,9 +27,9 @@ def main(file_path="data/deadelines.csv"):
     # Apply the highlight function to the dataframe
     styled_df = df.style.apply(highlight_dates, axis=1)
     # Convert datetime to date string
-    df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
+    #df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
     # Display the styled dataframe
-    st.dataframe(styled_df)
+    st.dataframe(df)
 
 import requests
 
