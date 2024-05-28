@@ -18,7 +18,7 @@ def main(file_path="data/deadelines.csv"):
         try:
             date_col = pd.to_datetime(row['DATE']).date()
             if date_col < current_date:
-                return ['background-color: gray'] * len(row)
+                return [''] * len(row)
             else:
                 return [''] * len(row)
         except:
@@ -29,7 +29,7 @@ def main(file_path="data/deadelines.csv"):
     # Convert datetime to date string
     #df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
     # Display the styled dataframe
-    st.dataframe(styled_df)
+    st.dataframe(df)
 
 import requests
 
