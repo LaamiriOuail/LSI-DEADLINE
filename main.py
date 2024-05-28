@@ -1,8 +1,11 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-def main():
+def main(file_path="data/deadelines.csv"):
     # Using Markdown and HTML for styling the title to be centered
     st.markdown("<h1 style='text-align: center;'>Projects/Exams Deadlines : </h1>", unsafe_allow_html=True)
     # Load the data and parse dates in the specified format
@@ -27,5 +30,18 @@ def main():
     #df['DATE'] = df['DATE'].dt.strftime('%d/%m/%Y')
     # Display the styled dataframe
     st.dataframe(styled_df)
+
+import requests
+
+
 if __name__=="__main__":
-    main()
+    MODE = os.getenv("MODE")
+    if MODE.lower() == "dev":
+        main()
+    elif MODE.lower() == "deployment":
+        url = os.getenv("DATA_URL")
+        response = requests.get(url)
+
+        with open('deadelines.csv', 'wb') as f:
+            f.write(response.content)
+        main("deadelines.csv")
